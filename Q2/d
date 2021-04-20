@@ -1,1 +1,1 @@
-SELECT DISTINCT m.FirstName, m.LastName, m.MemberID, eYear FROM Member as m JOIN Entry as e ON m.MemberID=e.MemberID having COUNT(e.Year>2;
+SELECT DISTINCT m.FirstName, m.LastName, m.MemberID FROM Member as m JOIN Entry as e ON m.MemberID=e.MemberID having COUNT(e.Year)>2;
