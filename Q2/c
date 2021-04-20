@@ -1,0 +1,1 @@
+SELECT m.FirstName, m.LastName, m.MemberID FROM Member as m JOIN Entry as e ON m.MemberID=e.MemberID where not e.Year='2013';
